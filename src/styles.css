@@ -1,12 +1,7 @@
 form {
+  margin-top: 3%;
   padding: 20px 20px 20px;
   background-color: #47a4f1;
   border: 1px solid grey;
   border-radius: 20px;
-  /*align-items: center;*/
 }
-
-button {
-  text-align: right;
-}
-
