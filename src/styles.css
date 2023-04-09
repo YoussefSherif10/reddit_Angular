@@ -1,7 +1,16 @@
-form {
+.container-sm {
   margin-top: 3%;
   padding: 20px 20px 20px;
   background-color: #47a4f1;
   border: 1px solid grey;
   border-radius: 20px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-image: linear-gradient(to left top, #4d4d4d, #656565, #7e7e7e, #989898, #b3b3b3);
 }
