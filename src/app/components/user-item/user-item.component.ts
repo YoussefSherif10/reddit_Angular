@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-item.component.css']
 })
 export class UserItemComponent {
+  name : string = 'Youssef';
 
 }
