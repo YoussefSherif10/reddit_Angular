@@ -1,12 +1,12 @@
-<form class="container-sm">
+<form class="container-sm" (ngSubmit)="addArticle()">
   <div class="form-group m-2">
     <label for="title">Title</label>
-    <input type="text" class="form-control m-1" id="title" placeholder="Enter Title">
+    <input type="text" class="form-control m-1" id="title" name="title" placeholder="Enter Title" [(ngModel)]="title">
   </div>
 
   <div class="form-group m-2">
     <label for="link">Link</label>
-    <input type="text" class="form-control m-1" id="link" placeholder="Enter Link">
+    <input type="text" class="form-control m-1" id="link" name="link" placeholder="Enter Link" [(ngModel)]="link">
   </div>
 
   <button type="submit" class="btn btn-secondary m-2">Add Link</button>
