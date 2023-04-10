@@ -1,0 +1,24 @@
+<div class="container-sm d-flex flex-row justify-content-around" style="width: 60%;">
+  <div class="card p-2" style="width: 18rem;">
+    <div class="card-header">
+      <h3>{{article.votes}}</h3>
+    </div>
+
+    <div class="card-body">
+      <h5>Points</h5>
+    </div>
+  </div>
+
+  <div class="p-2">
+    <h1>{{article.title}}</h1>
+    <p>{{article.link}}</p>
+
+    <div class="d-flex flex-row justify-content-between">
+      <i class='fas fa-angle-double-up p-2' style='font-size:24px;color: forestgreen'></i>
+      <a class="p-2 no-underline" (click)="upVote()">Up-vote</a>
+      <i class='fas fa-angle-double-down p-2' style='font-size:24px;color: red'></i>
+      <a class="p-2 no-underline" (click)="downVote()">Down-vote</a>
+    </div>
+  </div>
+
+</div>
