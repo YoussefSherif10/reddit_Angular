@@ -1,15 +1,15 @@
 <form class="container-sm" (ngSubmit)="addArticle()" style="width: 50%;">
   <div class="form-group m-2">
     <label for="title">Title</label>
-    <input type="text" class="form-control m-1" id="title" name="title" placeholder="Enter Title" [(ngModel)]="article.title">
+    <input type="text" class="form-control m-1" id="title" name="title" placeholder="Enter Title" [(ngModel)]="title">
   </div>
 
   <div class="form-group m-2">
     <label for="link">Link</label>
-    <input type="text" class="form-control m-1" id="link" name="link" placeholder="Enter Link" [(ngModel)]="article.link">
+    <input type="text" class="form-control m-1" id="link" name="link" placeholder="Enter Link" [(ngModel)]="link">
   </div>
 
   <button type="submit" class="btn btn-secondary m-2">Add Link</button>
 </form>
 
-<app-article></app-article>
+<app-article *ngFor="let article of sortedArticle()" [article]="article"></app-article>
